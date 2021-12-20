@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark1"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="match_parent"
+        android:layout_height="331dp"
+        android:background="@drawable/header_cost1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="268dp"
+        android:layout_height="249dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/repeat_grid_1"
+        app:layout_constraintEnd_toEndOf="@+id/view6"
+        app:layout_constraintStart_toStartOf="@+id/view6"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="268dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/header_cost2"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/view"></View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alwi Pratama Rahman"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:fontFamily="@font/segoebold"
+        app:layout_constraintBottom_toBottomOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="@+id/view2" />
+
+    <View
+        android:id="@+id/btn_edu"
+        android:layout_width="113dp"
+        android:layout_height="116dp"
+        android:layout_marginBottom="52dp"
+        android:background="@drawable/ic_home_education"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/view2"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <View
+        android:id="@+id/btn_about"
+        android:layout_width="113dp"
+        android:layout_height="116dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/ic_home_about"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_edu"
+        app:layout_constraintEnd_toStartOf="@+id/btn_edu"
+        app:layout_constraintTop_toTopOf="@+id/btn_edu" />
+
+    <View
+        android:id="@+id/btn_exp"
+        android:layout_width="113dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/ic_home_exp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_edu"
+        app:layout_constraintStart_toEndOf="@+id/btn_edu"
+        app:layout_constraintTop_toTopOf="@+id/btn_edu" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/segoebold"
+        android:text="Experience"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_exp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_exp"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="@+id/btn_exp" />
+
+    <TextView
+        android:id="@+id/edu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/segoebold"
+        android:text="Education"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_edu"
+        app:layout_constraintEnd_toEndOf="@+id/btn_edu"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/btn_edu" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/segoebold"
+        android:text="About me"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_about"
+        app:layout_constraintEnd_toEndOf="@+id/btn_about"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="@+id/btn_about" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/segoebold"
+        android:text="19330011"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="@+id/view6" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
